@@ -40,7 +40,7 @@ Guardar y leer datos de verdad.
 | [05-Reservas-de-vuelos](03-Ficheros-y-BBDD/05-Reservas-de-vuelos) | Un sistema de reservas de vuelos con su base de datos |
 
 ### 🏆 [04-Acepta-el-Reto](04-Acepta-el-Reto)
-Problemas de la web [Acepta el Reto](https://aceptaelreto.com/). Los archivos se llaman `AER` + el número del problema (por ejemplo, `AER112.java` es el problema 112).
+Problemas de la web [Acepta el Reto](https://aceptaelreto.com/user/profile.php?id=36826). Los archivos se llaman `AER` + el número del problema (por ejemplo, `AER112.java` es el problema 112).
 | Carpeta | De qué va |
 |---|---|
 | [01-Resueltos](04-Acepta-el-Reto/01-Resueltos) | Problemas resueltos |
