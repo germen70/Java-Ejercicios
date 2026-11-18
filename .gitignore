@@ -1,0 +1,8 @@
+# Archivos compilados de Java (se generan solos con javac)
+*.class
+
+# Cosas del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
