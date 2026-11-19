@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class ultimo2 {
+public class MapasTeoria {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -46,7 +46,7 @@ public class ultimo2 {
         }
         int i = 5;
         //cambia los valores de un mapa y con los valores de otro mapa
-        for (Map.Entry<Integer,String>  d : numeros.entrySet()) { //.keyset es un integer osea un valor
+        for (Map.Entry<String,Integer>  d : numeros.entrySet()) { //.keyset es un integer osea un valor
             d.setValue(0); //añade un 0 
             d.setValue(i--); //añade valores descendentes (5,4,3,2,1)
             

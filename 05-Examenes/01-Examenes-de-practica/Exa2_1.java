@@ -1,7 +1,7 @@
 //revisar como funciona ese while(sc.hasNext)
 import java.util.Scanner;
 
-public class Eje_4 {
+public class Exa2_1 {
 
     public static void main(String[] args) {
         

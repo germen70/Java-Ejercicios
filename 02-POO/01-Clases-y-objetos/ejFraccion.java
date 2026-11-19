@@ -23,10 +23,10 @@ public class ejFraccion {
         f3.sumar(f2);
         System.out.println(f3);
         Fraccion f = Fraccion.sumar(f2, f3);
+        System.out.println(f);
 
     }
 }
-//ver el final, algo esta mal
 
 class Fraccion {
     private Integer numerador;
@@ -134,7 +134,7 @@ class Fraccion {
         Integer n1 = this.numerador * f1.getDenominador();
         Integer n2 = this.denominador * f1.getNumerador();
         this.numerador = n1+n2;
-        denominador = f1.getDenominador();
+        this.denominador = this.denominador * f1.getDenominador();
         this.simplificar();
     }
     //otra forma de sumar (sumamos 2 fracciones y devuelve 1 fraccion)
@@ -147,5 +147,6 @@ class Fraccion {
         Fraccion f = new Fraccion(n3,d);
         
         f.simplificar();
+        return f;
     }
 }

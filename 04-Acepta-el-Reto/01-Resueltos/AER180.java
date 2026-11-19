@@ -1,5 +1,4 @@
-//sin terminar
-import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class AER180 {
@@ -17,19 +16,23 @@ public class AER180 {
         for (int i = 0; i < casos; i++) {
             
             
-            int total= 0;
-            int otro= 0;
-                
             a = sc.nextInt();
             b = sc.nextInt();
             c = sc.nextInt();
 
-            if(){
+            //ordeno los lados para que c sea el mas largo
+            int[] lados = {a, b, c};
+            Arrays.sort(lados);
+            a = lados[0];
+            b = lados[1];
+            c = lados[2];
 
-        
-                
+            if(a + b > c){ //si no se cumple no se puede formar el triangulo
+
+                long total = (long) c * c; //el lado largo al cuadrado
+                long otro = (long) a * a + (long) b * b; //los otros dos al cuadrado
+
                 if(total>otro){
-                    int aaa= cos−1(0.6667);
                     System.out.println("OBTUSANGULO");
                     
 

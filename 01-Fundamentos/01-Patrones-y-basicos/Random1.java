@@ -1,5 +1,5 @@
 /*Ejercicio donde se utiliza: Math.random() */
-public class Ramdom1 {
+public class Random1 {
 
     public static void main(String[] args) {
         

@@ -1,4 +1,4 @@
-/*version del profesor, es mas sencilla. Utiliza colas: los zapatos estan en una lista
+/*version mas sencilla. Utiliza colas: los zapatos estan en una lista
 yo saco un zapato y compruebo si exise su contrario; si existe, se borra y si no, se pone 
 en  otra cola. Despues imprimo las 2 colas*/
 import java.util.ArrayList;

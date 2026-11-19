@@ -1,5 +1,3 @@
-//HAY ALGO QUE ESTA MAL. EJERCICIO HECHO POR EL PROFESOR
-
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-//hecho por el profesor. La funcion recorre las letras sin necesidad de un array. 
+//La funcion recorre las letras sin necesidad de un array. 
 import java.util.Scanner;
 
 public class AER757v2{

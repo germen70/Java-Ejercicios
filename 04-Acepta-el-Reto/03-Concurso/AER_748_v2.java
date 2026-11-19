@@ -2,7 +2,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class AER_7488 {
+public class AER_748_v2 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

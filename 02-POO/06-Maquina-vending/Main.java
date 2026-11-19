@@ -1,4 +1,3 @@
-import java.lang.classfile.instruction.ReturnInstruction;
 import java.util.Scanner;
 
 public class Main {

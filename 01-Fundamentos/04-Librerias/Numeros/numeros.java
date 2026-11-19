@@ -14,7 +14,7 @@ public class numeros{
         String numer = String.valueOf(a);
         int digit = 0;
         for (int i = 0; i < numer.length(); i++) {
-            digit = digit++;
+            digit++;
             
         }
     
@@ -46,7 +46,7 @@ public class numeros{
     }
 
     //no esta ni terminado, ni corregido
-    public static int esPrimo (int a){ //se puede hacer con un for
+    public static boolean esPrimo (int a){ //se puede hacer con un for
         int div = 2;
         boolean primo = true;
         while(primo && div <=a / 2){ //lo de a/2 son cosas matematicas. sirve para ahorrar casos
@@ -67,7 +67,7 @@ public class numeros{
             if(esPrimo(a)){ //al numero lo pasamos por la funcion de arriba, si cumple entra dentro del if
                 salir = true;
             }
-        }while(salir); //solo salimos del bucle cuando entra dentro del if (salir se convierte en true)
+        }while(!salir); //solo salimos del bucle cuando entra dentro del if (salir se convierte en true)
         return a;
     }
 

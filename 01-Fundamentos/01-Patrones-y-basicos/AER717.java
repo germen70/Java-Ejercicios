@@ -1,4 +1,3 @@
-//aer 717 HECHO POR EL PROFESOR. YO NO LO PUDE RESOLVER. ENTENDER COMO FUNCIONA
 import java.util.Arrays;
 import java.util.Scanner;
 

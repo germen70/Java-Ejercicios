@@ -1,7 +1,6 @@
-//HAY ALGO QUE ESTA MAL. EJERCICIO HECHO POR EL PROFESOR
 //el aqui se cambia el arraylist por el hashset. La principal diferencia es que lo que se mete en la lista no es
 //repetido (si ya existe en la lista, no se añade)
-//El programa no funciona porque en hashset no hay el .ger(), .charat(), etc
+//como el hashset no tiene .get() ni .indexOf(), al final lo paso a un arraylist
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -38,6 +37,7 @@ public class AER109_2 {
                 equipos.add(datosPartido[2]);
                 partido = sc.nextLine();
             }
+            ArrayList<String> listaEquipos = new ArrayList<>(equipos);
             //numero de pratidos jugados de la liga
             int npartidos = partidos.size();
             //numero de partidos de una liga con esos equipos
@@ -55,12 +55,12 @@ public class AER109_2 {
                 //averiguo quien es el ganador y el perdedor
                 int ganador, perdedor;
                 if(p1>p2){
-                    ganador = equipos.indexOf(equipo1);
-                    perdedor = equipos.indexOf(equipo2);
+                    ganador = listaEquipos.indexOf(equipo1);
+                    perdedor = listaEquipos.indexOf(equipo2);
                     
                 }else{
-                    ganador = equipos.indexOf(equipo1);
-                    perdedor = equipos.indexOf(equipo2);
+                    ganador = listaEquipos.indexOf(equipo2);
+                    perdedor = listaEquipos.indexOf(equipo1);
                 }
                 //asigno los puntos a cada equipo
                 puntos[ganador]+=2;
@@ -88,7 +88,7 @@ public class AER109_2 {
             if (empate) {
                 System.out.print("EMPATE ");
             }else{
-                System.out.println(equipos.get(posicion)+" ");
+                System.out.print(listaEquipos.get(posicion)+" ");
             }
             
             System.out.println(totalPartidos - npartidos);

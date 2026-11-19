@@ -4,19 +4,6 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 public class AER_748 {
-    public static int recorre(ArrayList<Pistolero> lista){
-        int pos = -1;
-        for (Pistolero pistolero : lista) {
-            if (pistolero.nombre.equals(nombre)) {
-                pistolero.pistola = pistolero.pistola+p;
-                lista.add(pistolero);
-                break;
-            }
-            pos++;
-        }
-
-        return pos;
-    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int casos = sc.nextInt();
@@ -31,19 +18,18 @@ public class AER_748 {
                 if (!nombre.equals("?")) {
 
                     int p = Integer.valueOf(sc.next());
-                    if(!lista.contains(new Pistolero(nombre, p))){
-
-                        lista.add((new Pistolero(nombre, p)));
-                    }else{
-                        
-                        lista.get(i);
-
-                            if (pistolero.nombre.equals(nombre)) {
-                                 pistolero.pistola = pistolero.pistola+p;
-                                lista.add(pistolero);
-                                break;
-                            }
-                        
+                    //busco si el pistolero ya esta en la lista
+                    Pistolero encontrado = null;
+                    for (Pistolero pistolero : lista) {
+                        if (pistolero.nombre.equals(nombre)) {
+                            encontrado = pistolero;
+                            break;
+                        }
+                    }
+                    if (encontrado == null) {
+                        lista.add(new Pistolero(nombre, p));
+                    } else {
+                        encontrado.pistola = encontrado.pistola + p;
                     }
                 }else{
                     //String l = sc.nextLine();

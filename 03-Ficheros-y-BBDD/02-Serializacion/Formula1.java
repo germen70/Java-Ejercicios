@@ -27,7 +27,7 @@ public class Formula1 {
             while ((c = br.readLine()) != null) {
                 String[] datos = c.split(":");
                 
-                listac.add(new Circuito(Integer.valueOf(datos[3]), datos[1], datos[2], Integer.valueOf(datos[0])));
+                listac.add(new Circuito(Integer.valueOf(datos[0]), datos[1], datos[2], Integer.valueOf(datos[3])));
             }
         } catch (Exception e) {
             // TODO: handle exception
@@ -42,7 +42,7 @@ public class Formula1 {
     
         System.out.println("Introduce numero de circuito");
         int num = sc.nextInt();
-        Circuito = c;
+        Circuito c = null;
         for (Circuito circuito : circuitosss) {
             if (circuito.getNumCircuito() == num) {
                 c = circuito;
@@ -52,9 +52,9 @@ public class Formula1 {
         List<ResultadoCarrera> resultadosss = new ArrayList<>();
 
         for (Piloto p : pilotosss) {
-            System.out.println("Introduce la posicion de "+piloto.getNombre());
+            System.out.println("Introduce la posicion de "+p.getNombre());
             int pos = sc.nextInt();
-            resultadosss.add(new ResultadoCarrera(c, piloto, pos));
+            resultadosss.add(new ResultadoCarrera(c, p, pos));
         }
 
 
@@ -74,6 +74,10 @@ class Piloto{
         this.pais = pais;
         this.equipo = equipo;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }
 class Circuito{
 
@@ -88,4 +92,8 @@ class Circuito{
         this.fin = fin;
         this.metros = metros;
     } 
+
+    public int getNumCircuito() {
+        return num;
+    }
 }

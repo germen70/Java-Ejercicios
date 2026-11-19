@@ -1,4 +1,4 @@
-public class Amigo{
+public class Amigo implements java.io.Serializable{
 
     public String nombre;
     public int movil;

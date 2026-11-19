@@ -1,4 +1,4 @@
-//hecho por el profesor. La funcion sirve en cualquiera de los casos. 
+//La funcion sirve en cualquiera de los casos. 
 import java.util.Scanner;
 
 public class AER757v2{

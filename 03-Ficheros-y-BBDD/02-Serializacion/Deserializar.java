@@ -14,7 +14,7 @@ public class Deserializar {
         
         ArrayList<Amigo> a = new ArrayList<>();
         try {
-            ObjectOutputStream is = new ObjectOutputStream(new FileOutputStream("amigos.dat"));//creo que el problema esta aqui
+            ObjectInputStream is = new ObjectInputStream(new FileInputStream("amigos.dat"));
             //Amigo a = (Amigo) is.readObject();
             //leemos la serealizacion
             /*

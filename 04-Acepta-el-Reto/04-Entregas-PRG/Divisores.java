@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ultimo {
+public class Divisores {
     public static ArrayList<Integer> divisores (int n){
         ArrayList<Integer> lista = new ArrayList<>();
         lista.add(1); //se añade el numero 1 poque todo numero dividido por 1, el resto da 0

@@ -89,7 +89,6 @@ public class EJReservas {
         r.updateReserva();
 
     }
-    //sin terminar??
     public static void bajaReserva(){
        
         //Elegir Pasajero
@@ -99,8 +98,8 @@ public class EJReservas {
         System.out.println(Reserva.buscaReserva(idp));
         System.out.println("Elige vuelo");
         String idv = sc.nextLine();
-        //Pedir num asiento
-        Reserva.eligeReserva(idv,idp);
+
+        Reserva.deleteReserva(idv,idp);
 
     }
 
@@ -125,7 +124,7 @@ public class EJReservas {
                     modificaReserva();
                     break;
                 case 5:
-                    //bajaReserva();
+                    bajaReserva();
                     break;
                 case 6:
                     System.out.println("FIN del PROGRAMA");

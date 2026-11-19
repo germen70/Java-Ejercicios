@@ -101,31 +101,26 @@ public class Reserva {
         }
         return "";
     }
-    //sin terminar
-    public static void deleteReserva(){
+    public static boolean deleteReserva(String idVuelo, Integer idPasajero){
        try{
             Connection con = Conecta("ReservaVuelos",
                                      "root","toor");
             Statement st = con.createStatement();
-            String sql = "DELETE FROM VueloPasajero WHERE Id_Vuelo = '"++"' AND Id_Pasajero = "+;                     
-            ResultSet rs = st.executeQuery(sql);
-
-            String resultado = "";
-
-            while (rs.next()){
-                resultado += rs.getString("Id_Vuelo");
-                resultado += "Asiento: "+ rs.getInt("Num_Asiento") + "\n";
-            }
-
+            String sql = "DELETE FROM VueloPasajero WHERE Id_Vuelo = '"+idVuelo+
+                                                    "' AND Id_Pasajero = "+idPasajero;
+            int filas = st.executeUpdate(sql);
 
             con.close();
 
-            return resultado;
+            if (filas > 0){
+                System.out.println("Reserva eliminada");
+                return true;
+            }
 
         }catch(SQLException e){
-            System.out.println("FALLO en el INSERT");
+            System.out.println("FALLO en el DELETE");
         }
-        return "";
+        return false;
 
     }
 
