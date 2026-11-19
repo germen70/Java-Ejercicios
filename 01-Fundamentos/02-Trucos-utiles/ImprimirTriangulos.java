@@ -9,7 +9,7 @@
 /*esta es mi version hecha por mi */
 import java.util.Scanner;
 
-public class ImprimirTriangulosYo {
+public class ImprimirTriangulos {
 
     public static void main(String[] args) {
 
