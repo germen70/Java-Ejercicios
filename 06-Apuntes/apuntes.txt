@@ -78,13 +78,13 @@ while (it.hasNext()) {
     Persona p = it.next();
 
     if (p.getNombre().equals("Juan")) {
-        it.remove(); // ✔ correcto
+        it.remove(); // correcto
     }
 }
 for (int i = 0; i < lista.size(); i++) {
     if (lista.get(i).getNombre().equals("Juan")) {
         lista.remove(i);
-        i--; // 🔥 importante
+        i--; // importante
     }
 }
 

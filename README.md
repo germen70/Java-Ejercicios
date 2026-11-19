@@ -62,7 +62,7 @@ Exámenes que he hecho durante el curso (con los enunciados en PDF cuando los te
 | [07-Examen-7](05-Examenes/07-Examen-7) | Currículums, habilidades y preguntas de examen |
 
 ### [06-Apuntes](06-Apuntes)
-Mis chuletas: comandos, MySQL, pilas y colas, cosas para el examen...
+Mis chuletas: comandos, MySQL, cosas para el examen...
 
 ---
 
